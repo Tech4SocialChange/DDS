@@ -1,0 +1,59 @@
+﻿.itemTemplate {
+    margin:0;
+    padding:0;    max-width: 430px;
+    height: 56px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+.backElement {
+    margin: 0 auto;padding:0;
+    /*background-image: url('../images/main_back.jpg');*/
+    background-repeat: no-repeat;
+    max-width: 569px;
+    height:342px;
+    font-size: 11px;
+    padding-top: 15px;
+
+}
+.titleText {
+    max-width: 265px;
+    float: right;
+}
+.rotator {
+    margin:0;
+    padding:0;
+    margin-left: 15px;
+    margin-top: 0px;
+    width: 410px;
+    height: 180px;
+}
+.dateTime {
+    max-width: 95px;
+    height: 50px;
+    float: left;
+}
+.title {
+    max-width: 265px;
+    margin-top: 14px;
+    float: left;
+    text-align:left;
+    margin-left:30px;
+}
+.date {
+    margin-top: 5px;
+    padding-left:15px;
+    color: #fff;
+    float: right;
+    font-size: 11px;
+}
+.time {
+    margin-top: 5px;
+    text-align: right;
+    font-size: 20px;
+}
+.message
+{
+    display: inline-block;
+    margin-left: 5px;
+    margin-top: 20px;
+}

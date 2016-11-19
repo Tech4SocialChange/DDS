@@ -1,0 +1,96 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="CSRSMASTER.master.cs" Inherits="CSRS.CSRSMASTER" %>
+
+<%@ Register Assembly="Telerik.Web.UI" Namespace="Telerik.Web.UI" TagPrefix="telerik" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link href="css/appStyle.css" rel="stylesheet" />
+    <link href="css/bootstrap.css" rel="stylesheet" />
+
+    <script src="js/jquery-1.9.1.min.js"></script>
+    <script src="js/AppScript.js"></script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+
+<body>
+    <form id="form1" runat="server">
+        <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
+        <div class="appContainer ">
+            <div class="pageTitle">
+                <div class="row">
+                    <div class="col-md-6 text-left" style="background-color: #ed1c24; /*background-image: url('../Images/SCI-LogoT.png'); background-repeat: no-repeat; background-position-x: 10px; background-position-y: -2px; background-size: contain; padding-left: 55px; */">
+                        <div style="margin-top: -3px; padding-bottom: 3px;">DISASTER DASHBOARD SYSTEM</div>
+                    </div>
+                    <div class="col-md-6 text-right menuStyle" style="background-image: url('../Images/CornorTop.png'); background-repeat: no-repeat; background-color: white;">
+                        <%--                        <div id="menuAll" runat="server" style="color: #ed1c24;">
+                            <span style="margin-right: -2px; margin-left: 10px;">
+                                <asp:Label ID="lblUserName" runat="server" Text="IMROSE" ForeColor="#ed1c24"></asp:Label>
+                            </span>:
+                            <asp:LinkButton ID="lbLogoutUser" runat="server" OnClick="lbLogout_Click" ForeColor="#ed1c24" CausesValidation="False" PostBackUrl="~/Login.aspx">LOGOUT</asp:LinkButton>
+                        </div>--%>
+                        <%--      <div id="menuAdmin" runat="server">
+                            <ul class="horizontal-list">
+                                <li>
+                                    <asp:LinkButton ID="lbHome" runat="server" PostBackUrl="Default.aspx" ForeColor="#ed1c24">HOME</asp:LinkButton>
+                                </li>
+                                <%--<li>
+                                    <asp:LinkButton ID="lbCSRform" runat="server" PostBackUrl="CSR.aspx" ForeColor="#ed1c24">CSR-FORM</asp:LinkButton>
+                                </li>-
+                                <li>
+                                    <asp:LinkButton ID="lbCSRlist" runat="server" PostBackUrl="CSRList.aspx" ForeColor="#ed1c24">CSR-LIST</asp:LinkButton>
+                                </li>
+                                <li>
+                                    <asp:LinkButton ID="lbSumCSR" runat="server" PostBackUrl="SummaryCSR.aspx" ForeColor="#ed1c24">Summary-CSR</asp:LinkButton>
+                                </li>
+                                <li>
+                                    <asp:LinkButton ID="lbSetup" runat="server" PostBackUrl="Setup.aspx" ForeColor="#ed1c24">SETUP</asp:LinkButton></li>
+                                <li style="margin-right: 10px;">
+                                    <asp:LinkButton ID="lbReport" runat="server" PostBackUrl="Reports.aspx" ForeColor="#ed1c24">REPORT</asp:LinkButton>
+                                </li>
+                                <span style="margin-right: -2px; margin-left: 10px;">
+                                    <asp:Label ID="lblAdminName" runat="server" Text="" ForeColor="#ed1c24"></asp:Label>
+                                </span>:
+                                <li style="margin-right: 0px; margin-left: 2px;">
+                                    <asp:LinkButton ID="lbLogoutAdmin" runat="server" OnClick="lbLogout_Click" ForeColor="#ed1c24" CausesValidation="False" PostBackUrl="~/Login.aspx">LOGOUT</asp:LinkButton>
+                                </li>
+                            </ul>
+
+                        </div>--%>
+                        <div style="color: #ed1c24">HELPLINE 9999-999-999</div>
+                    </div>
+                </div>
+            </div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <%--        <div style="box-shadow: inset -1px 0px 10px -3px rgba(0,0,0,0.74); background-color: #5580A0; border-top: 2px solid #E2E2E2; padding-bottom: 0; margin-bottom: 0">--%>
+        <div class="footer">
+            <div style="text-align: center; padding: 5px; padding-top: 15px; position: relative; bottom: 0; width: auto; font-size: 12px; color: #9c9292; padding-bottom: 0; margin-bottom: 0">
+                <div style="text-align: center; font-size: 12px;">
+                    This site is designed and developed by SCIB ICT Application Development Unit, © 2015 Save the Children In Bangladesh.
+                </div>
+                <br />
+                <div style="width: 1000px; font-size: 12px; text-align: center;">
+                    Save the Children, House No. CWN (A) 35, Road No. 43, Gulshan – 2, Dhaka -1212, Bangladesh. 
+                    Tel  : +88 02 8828081, Fax  : + 88 02 9886372, + 88 02 8812523, E-Mail: info.bangladesh@savethechildren.org
+                <br />
+                </div>
+                <br />
+                <div style="width: auto; font-size: 12px; text-align: center; padding-bottom: 0; margin-bottom: 0">
+                    <a href="https://bangladesh.savethechildren.net/news">News</a>&nbsp;|&nbsp;
+                <a href="https://bangladesh.savethechildren.net/media/photos">Photos</a>&nbsp;|&nbsp;
+                <a href="https://en-gb.facebook.com/savethechildreninbangladesh">Facebook</a>&nbsp;|&nbsp;
+                <a href="https://twitter.com/SCinBD">Twitter</a>&nbsp;|&nbsp;
+                <a href="https://www.youtube.com/SCinBD">YouTube</a>
+                </div>
+            </div>
+        </div>
+
+        <%--        </div>--%>
+    </form>
+</body>
+</html>
